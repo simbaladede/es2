@@ -1,0 +1,30 @@
+   70  git merge New_featureNavbar
+   71  git add.
+   72  git add .
+   73  git commit -m "conflitto in corso"
+   74  git push origin master
+   75  cd ..
+   76  clear
+   77  mkdir compitoRettories2
+   78  cd compitoRettories2
+   79  git init
+   80  git config user.name "simbaladede"
+   81  git config user.email "rettori.lorenzo@itismeucci.com"
+   82  git remote add origin https://github.com/simbaladede/es2.git
+   83  git clone https://github.com/sena-meucci/progettoStampa.git
+   84  git remote -v
+   85  cd progettoStampa
+   86  nano stampa.cpp
+   87  git status
+   88  git add .
+   89  git commit -m "nome inserito"
+   90  nano stampa.cpp
+   91  git branch bugfix
+   92  git checkout bugfix
+   93  nano stampa.cpp
+   94  git add .
+   95  git commit -m "problema risolto"
+   96  git checkout master
+   97  git merge bugfix
+   98  git branch -d bugfix
+   99  history 30 > comandi.txt
